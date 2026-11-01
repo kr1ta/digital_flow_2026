@@ -1,6 +1,5 @@
 proc user_init_design {} \
 {
- 
     # ------------------
     # Init design
     # ------------------
@@ -14,14 +13,13 @@ proc user_init_design {} \
     set_db init_ground_nets    $::env(ENV_GROUND_NETS)
     set_db init_mmmc_files     $::env(ENV_MMMC)
 
-    read_mmmc     $::env(ENV_MMMC)
+    read_mmmc          $::env(ENV_MMMC)
     read_physical -lef $::env(ENV_LEF_FILES)
 
     read_netlist  $::env(ENV_NETLIST) -top $::env(ENV_DESIGN)
     init_design
-
-
 }
+
 
 proc user_read_floorplan {} {
     # ----------------------------------------------------------
@@ -68,9 +66,4 @@ proc global_net {} \
     connect_global_net VDD -type pg_pin -pin_base_name vdd -inst_base_name *
     connect_global_net VSS -type pg_pin -pin_base_name gnd -inst_base_name *
     connect_global_net VSS -type pg_pin -pin_base_name vss -inst_base_name *
-
-
-
 }
-
-
