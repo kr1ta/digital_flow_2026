@@ -1,6 +1,7 @@
 # 1. Загрузка процедур и импорт проекта.
 source $::env(FLOW_DIR)/steps.innovus.tcl
 user_init_design
+global_net
 
 # 2. Геометрия floorplan.
 set_io_flow_flag 0
