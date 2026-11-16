@@ -1,0 +1,19 @@
+::db::check_and_set_root_attr extract_rc_engine pre_route
+::db::check_and_set_root_attr delaycal_enable_high_fanout true
+::db::check_and_set_root_attr delaycal_ignore_net_load false
+::db::check_and_set_root_attr extract_rc_coupling_cap_threshold 3.0
+::db::check_and_set_root_attr extract_rc_relative_cap_threshold 0.03
+::db::check_and_set_root_attr extract_rc_total_cap_threshold 5.0
+::db::check_and_set_root_attr floorplan_default_tech_site CoreSite
+::db::check_and_set_root_attr floorplan_max_io_height false
+::db::check_and_set_root_attr opt_drv_margin 0.0
+::db::check_and_set_root_attr opt_fix_drv true
+::db::check_and_set_root_attr opt_resize_flip_flops true
+::db::check_and_set_root_attr opt_setup_target_slack 0.0
+::db::check_and_set_root_attr opt_view_pruning_hold_views_active_list { typ }
+::db::check_and_set_root_attr opt_view_pruning_setup_views_active_list { typ }
+::db::check_and_set_root_attr opt_view_pruning_setup_views_persistent_list { typ}
+::db::check_and_set_root_attr opt_view_pruning_tdgr_setup_views_persistent_list { typ}
+::db::check_and_set_root_attr route_design_extract_third_party_compatible false
+::db::check_and_set_root_attr route_design_global_exp_timing_driven_std_delay 25.2
+::db::check_and_set_root_attr write_def_stream_check_uncolored false

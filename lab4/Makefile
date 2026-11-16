@@ -6,7 +6,7 @@ export PDK_DIR                  = $(PWD)/../PDK/
 # ============================================================
 # Design settings
 # ============================================================
-export ENV_DESIGN               = s13207
+export ENV_DESIGN               = processing_unit
 export ENV_DESIGN_DIR           = $(PWD)/data/$(ENV_DESIGN)
 export ENV_MMMC                 = $(ENV_DESIGN_DIR)/mmmc.view
 export ENV_DEFINE               =
@@ -23,7 +23,7 @@ export INNOVUS_FP_SCRIPT        = $(FLOW_DIR)/flow.innovus.fp.tcl
 # ============================================================
 # Genus Synthesis settings
 # ============================================================
-export GENUS_RUN_DIR            = $(PWD)/run/genus.syn
+export GENUS_RUN_DIR            = $(PWD)/../lab2/run/genus
 export GENUS_OUTPUT_DIR         = $(GENUS_RUN_DIR)/outputs
 export GENUS_REPORT_DIR         = $(GENUS_RUN_DIR)/reports
 export GENUS_LOG_DIR            = $(GENUS_RUN_DIR)/logs
@@ -34,7 +34,7 @@ export GENUS                    = genus
 # ============================================================
 # Genus Synthesis (script run)
 # ============================================================
-export GENUS_SYN_RUN_DIR        = $(PWD)/run/genus.syn
+export GENUS_SYN_RUN_DIR        = $(PWD)/run/genus
 
 # ============================================================
 # LEC settings
@@ -48,7 +48,7 @@ export LEC_FILE                 = $(GENUS_OUTPUT_DIR)/rtl2final.lec.do
 # ============================================================
 export TECH_SIZE                = 130
 export ENV_NETLIST              = $(GENUS_OUTPUT_DIR)/syn_opt/$(ENV_DESIGN).v
-export ENV_FLOORPLAN_FILE       = $(ENV_DESIGN_DIR)/floorplan/s13207.fp
+export ENV_FLOORPLAN_FILE       = $(ENV_DESIGN_DIR)/floorplan/processing_unit_floorplan_4.fp
 export ENV_LEF_FILES            = $(PDK_DIR)/IHP_Open_PDK/sg13g2_stdcell/lef/sg13g2_tech.lef $(PDK_DIR)/IHP_Open_PDK/sg13g2_stdcell/lef/sg13g2_stdcell.lef
 export ENV_POWER_NETS           = VDD
 export ENV_GROUND_NETS          = VSS
